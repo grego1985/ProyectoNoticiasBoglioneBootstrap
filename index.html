@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <!--Hojas de estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Icono que se muestra en pantalla-->
+    <link rel="shortcut icon" href="assets/logo.jpeg" type="image/x-icon">
+
+    <!--wow animaciones-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>ESCBA - Leones</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <a href="index.html"><img src="assets/logoBlanco.png" alt="LOGO" class="logo"></a>
+        
+        <nav class="navegacion">
+                <!--MENU DE NAVEGACION-->
+            <ul class="navegacion__ul">
+                <li class="navegacion__ul__li"> <a class="navegacion__a" href="index.html">Inicio</a> </li>
+                <li class="navegacion__ul__li"> <a class="navegacion__a" href="noticias.html">Últimas Noticias</a> </li>
+                <li class="navegacion__ul__li"><a class="navegacion__a" href="institucion.html">Nuestra Institución</a></li>
+                <li class="navegacion__ul__li"><a class="navegacion__a" href="colaboradores.html">Colaboradores</a></li>
+                <li class="navegacion__ul__li"><a class="navegacion__a" href="contacto.html">Contacto</a></li>
+            
+
+                <!--REDES SOCIALES Y PAGINA BUSCAR-->
+                <a class="navegacion__redes__lupa" href="#" ><img src="assets/buscar.png" alt="Buscar" width="24px"></a>
+                <a class="navegacion__redes" href="https://www.facebook.com/escba.leones" target="_blank"><img src="assets/facebook.png" alt="Facebook" width="24px"></a>
+                <a class="navegacion__redes" href="https://www.instagram.com/escbaleones/?hl=es" target="_blank"><img src="assets/instagram.png" alt="Facebook" width="24px"></a>
+            </ul>
+
+            <!--LOGO RESPONSIVE-->
+            <div class="menu-responsive">
+                <img src="assets/menu.png" width="32px" alt="Menu">
+                <img class="" src="assets/logoAzul.png" alt="Logo ESCBA" width="100px">
+                <a class="lupares" href="#" ><img src="assets/buscar.png" alt="Buscar" width="24px"></a>               
+            </div>
+        </nav>
+</header>
+    <div class="container-fluid"><!--CONTEINER BOOTSTRAP-->
+        <div class="row col-xs-12 col-sm-4 col-md-12 col-lg-6 col-xl-12"> <!--DIV ROS BOOTSTRAP-->
+        <!--CONTENIDO PRINCIPAL-->
+            <main class="main container">
+                <section class="noticiaPrincipal">
+                    <div class="noticiaPri">
+                        <!--AL HACER CLICK EN LA IMAGEN NOS LLEVA AL DETALLE NOTICIA-->
+                        <a class="notPriA" href="detalleNoticia.html"><img src="assets/imgNoticias/profesor.jpg" alt="Título Noticia" class="notPriImg"></a>
+                        <!--AL HACER CLICK EN EL TITULO NOS LLEVA AL DETALLE NOTICIA-->
+                        <a class="notPriA" href="detalleNoticia.html"><h1 class="notPriH1">Título Noticia</h1></a>
+                        <p class="notPriP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptatem qui omnis velit, amet ad iure commodi corporis aut doloribus, voluptatibus deleniti at iste animi? Impedit dolor ad dignissimos facere?</p>
+                    </div>
+                    <!--div donde va la noticia secundaria-->
+                    <div class="main__noticiaSecundaria">
+                        <a class="main__noticiaSecundaria__a" href="detalleNoticia.html"><img src="assets/imgNoticias/imagen1.jpg" alt="Título Noticia" class="main__noticiaSecundaria__img"></a>
+                        <!--AL HACER CLICK EN EL TITULO NOS LLEVA AL DETALLE NOTICIA-->
+                        <a class="main__noticiaSecundaria__a" href="detalleNoticia.html"><h1 class="main__noticiaSecundaria__h1">Título NOTICIA  Secundaria</h1></a> 
+                    </div>
+                </section>
+
+                <section class="noticiasSec">
+                    <!--div en los cuales van 2 noticias-->
+                    <div class="notXDos">
+                        <a class="notXDos__a" href="detalleNoticia.html"><img class="notXDos__img" src="assets/imgNoticias/imagen3.jpg" alt="Título Noticia"></a>
+                        <a class="notXDos__a" href="detalleNoticia.html"><h1 class="notXDos__h1">Título Noticia</h1></a> 
+                        <a class="notXDos__a" href="detalleNoticia.html"><img class="notXDos__img" src="assets/imgNoticias/imagen3.jpg" alt="Título Noticia"></a>
+                        <a class="notXDos__a" href="detalleNoticia.html"><h1 class="notXDos__h1">Título Noticia</h1></a> 
+                    </div>
+                </section>
+                <!--EN EN ASIDE VAN 2 O 3 IMAGENES DE COLABORADORES DONDE AL HACER CLICK LLEVA AL SITIO DEL COLABORADOR EN CASO DE TENERLO -->
+                <aside class="main__aside">
+                    <a href="colaboradores.html"><img src="assets/imgNoticias/imagen4.JPG" alt="Título Noticia" class="main__aside__img"></a> 
+                    <a href="colaboradores.html"><img src="assets/imgNoticias/imagen4.JPG" alt="Título Noticia" class="main__aside__img"></a> 
+                </aside>
+            </main>
+                    <!--SECCION NOTICIAS GENERALES-->
+                    <section class="generales">
+                    <!--SECCION PARA RESPONSIVE-->
+                        <div class="divResponsive">
+                            <div class="noticiasGenerales__articulos ">
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><img class="noticiasGenerales__img" src="assets/imgNoticias/imagen3.jpg" alt="Título Noticia"></a>
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><h1 class="noticiasGenerales__h1">Título Noticia</h1></a> 
+                            </div>
+                            <div class="noticiasGenerales__articulos">
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><img class="noticiasGenerales__img" src="assets/imgNoticias/imagen3.jpg" alt="Título Noticia"></a>
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><h1 class="noticiasGenerales__h1">Título Noticia</h1></a> 
+                            </div>
+                        </div>
+
+                        <div class="noticiasGenerales notGenResponsive container-fluid">
+                            <div class="noticiasGenerales__articulos ">
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><img class="noticiasGenerales__img" src="assets/imgNoticias/imagen3.jpg" alt="Título Noticia"></a>
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><h1 class="noticiasGenerales__h1">Título Noticia</h1></a> 
+                            </div>
+                            <div class="noticiasGenerales__articulos">
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><img class="noticiasGenerales__img" src="assets/imgNoticias/imagen3.jpg" alt="Título Noticia"></a>
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><h1 class="noticiasGenerales__h1">Título Noticia</h1></a> 
+                            </div>
+                            <div class="noticiasGenerales__articulos">    
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><img class="noticiasGenerales__img" src="assets/imgNoticias/imagen3.jpg" alt="Título Noticia"></a>
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><h1 class="noticiasGenerales__h1">Título Noticia</h1></a> 
+                            </div>
+                            <div class="noticiasGenerales__articulos oculta">    
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><img class="noticiasGenerales__img" src="assets/imgNoticias/imagen3.jpg" alt="Título Noticia"></a>
+                                <a class="noticiasGenerales__a" href="detalleNoticia.html"><h1 class="noticiasGenerales__h1">Título Noticia</h1></a> 
+                            </div>
+                        </div>
+                </section>
+        </div> <!--CIERRE DIV ROW BOOTSTRAP-->
+    </div><!--CIERRE DIV CONTAINER BOOTSTRAP-->
+    
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+            </div>
+        </section>
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- REDES SOCIALES -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Seguinos en:
+                    </h6>
+                    <p>
+                    <a href="https://www.facebook.com/escba.leones" class="text-reset">Facebook</a>
+                    </p>
+                    <p>
+                    <a href="https://www.instagram.com/escbaleones/?hl=es" class="text-reset">Instagram</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Mapa del Sitio
+                    </h6>
+                    <p>
+                    <a href="index.html" class="text-reset">Inicio</a>
+                    </p>
+                    <p>
+                    <a href="noticias.html" class="text-reset">Noticias</a>
+                    </p>
+                    <p>
+                    <a href="institucion.html" class="text-reset">Institución</a>
+                    </p>
+                    <p>
+                    <a href="colaboradores.html" class="text-reset">Colaboradores</a>
+                    </p>
+                    <p>
+                        <a href="contacto.html" class="text-reset">Contacto</a>
+                    </p>
+                </div>       
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Contacto
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> Alte. Brown 551</p>
+                    <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    escba.escbaleones@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> 03472 483562</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+        </div>
+    </footer>      
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script><!--BOOTSTRAP-->    
+        </body>
+</html>
