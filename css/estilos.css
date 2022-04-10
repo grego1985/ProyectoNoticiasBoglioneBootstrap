@@ -43,6 +43,8 @@ body{
     background-color: white;
 	top: 0px;
     height: 64px;
+    margin: 0;
+    padding: 0;
   /* margin-bottom: 10px;*/
 }
 
@@ -459,6 +461,11 @@ body{
 
 
 /*INICIO ESTILOS INSTITUCION*/
+
+.intContenedor .intSeccionPri{
+    margin: 0;
+    padding: 0;
+}
 .intSeccionPri{
     display: grid;
     grid-template-columns:  1fr 1fr;
@@ -468,11 +475,11 @@ body{
     margin-bottom: 20px;
 }
 
-.intH1{
-    margin-left: 20px;
-    color: white;
+.display-3{
+    margin-left: 15px;
+    color: white;/*
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;
+    font-size: 50px;*/
 }
 
 .intImg{
@@ -519,6 +526,7 @@ body{
     font-weight: bold;
     color: white;
     margin-left: 15px;
+    margin-top: 15px;
 }
 
 .contenidoCol{
@@ -529,13 +537,19 @@ body{
     justify-items: center;
 }
 .infoCol{
-    margin-left: 30px;
     margin-top: 20px;
+
 }
 
 .imgCol{
-    width: 350px;
+    width: 90%;
     height: 250px;
+    margin-right: 20px;
+}
+
+.imgCol:hover{
+    animation: headShake; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s; /* don't forget to set a duration! */
 }
 
 .colH1{
@@ -552,6 +566,7 @@ body{
     font-weight: bold;
     color: white;
     margin-left: 15px;
+    margin-top: 15px;
 }
 
 .contGeneral{
@@ -608,7 +623,8 @@ body{
     font-weight: bold;
     border: 0;
     color: #014e89;
-    border-radius: 5px;    
+    border-radius: 5px;
+    margin-bottom: 15px;    
 }
 
 .formBoton:hover{
@@ -625,6 +641,7 @@ body{
     transition-timing-function: linear;
     padding-right: 100px;
     align-items: center;
+    
 }
 
 .infoCont{
@@ -664,7 +681,8 @@ body{
     margin-left: 15px;
     display: block;
     animation: backInLeft; 
-    animation-duration: 0.5s; 
+    animation-duration: 0.5s;
+    margin-top: 20px; 
 }
 
 .detP{
@@ -1617,7 +1635,7 @@ body{
     }
 
     .imgCol{
-        width: 100%;
+        width: 90%;
     }
 
     .colH1{
@@ -1716,7 +1734,7 @@ body{
     }
 
     .imgCol{
-        width: 100%;
+        width: 90%;
     }
 
     .colH1{
@@ -1779,7 +1797,7 @@ body{
     }
 
     .imgCol{
-        width: 100%;
+        width: 90%;
     }
 
     .colH1{
@@ -1871,11 +1889,11 @@ body{
     }   
 
     .labelMapa{
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .labelDatos{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .mapaCont{
@@ -1992,11 +2010,11 @@ body{
     }   
 
     .labelMapa{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .labelDatos{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .mapaCont{
@@ -2071,6 +2089,7 @@ body{
 
     .infoCont{
         margin: 0;
+        margin-left: 20px;
     }   
 
     .labelMapa{

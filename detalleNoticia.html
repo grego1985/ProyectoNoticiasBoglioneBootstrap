@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
-    <!--Hojas de estilos-->
+     <!--BOOTSTRAP-->
+     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+     <!--Hojas de estilos-->
     <link rel="stylesheet" href="css/estilos.css">
     <!--wow animaciones-->
     <link
@@ -25,7 +27,7 @@
     <header class="encabezado">
         <a href="index.html"><img src="assets/logoBlanco.png" alt="LOGO" class="logo"></a>
 
-        <nav class="navegacion">
+        <nav class="navegacion container-fluid">
                 <!--MENU DE NAVEGACION-->
             <ul class="navegacion__ul">
                 <li class="navegacion__ul__li"> <a class="navegacion__a" href="index.html">Inicio</a> </li>
@@ -49,48 +51,95 @@
             </div>
         </nav>
 </header>
+    <div class="container-fluid"><!--CONTEINER BOOTSTRAP-->
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-12"> <!--DIV ROS BOOTSTRAP-->
+            <main>
+                    <h1 class="detH1">
+                        Título Completo de la Noticia
+                    </h1>
+                    <section class="contenidoNoticia">   
 
-    <main>
-            <h1 class="detH1">
-                Título Completo de la Noticia
-            </h1>
-            <section class="contenidoNoticia">   
+                        <!--pequeño intro de la noticia-->
+                        <p class="detP">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem debitis recusandae suscipit inventore enim consequuntur deleniti dolorem praesentium aut ratione perspiciatis cum, soluta ipsum asperiores doloremque, minus incidunt distinctio.
+                        </p>
+                        <!--ACA PODRÍA IR LA IMAGEN DE LA NOTICIA Y UNA GALERIA O CARRUSEL DE IMAGENES-->
+                        <img class="detImg" src="assets/imgNoticias/profesor.jpg" alt="Titulo Noticia">
+                        <p class="detP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium aspernatur nostrum eaque numquam illo voluptas! Quasi doloribus, unde, esse consequuntur rem distinctio blanditiis quod ullam veniam totam nihil consectetur!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut natus, sequi nostrum labore excepturi reprehenderit ab nam in ex quia reiciendis, itaque illum? Repudiandae ducimus corporis cupiditate facere cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium molestias reiciendis vitae itaque possimus. Quod quos voluptate reiciendis dignissimos cumque voluptatibus quis veritatis obcaecati nulla. In expedita dolore harum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas exercitationem natus accusamus ducimus at laudantium mollitia placeat rem repellat quae, magni minima labore architecto aliquid consequatur nesciunt cumque dolores ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum? Quae, magnam. Maxime ex fugiat quibusdam sed esse illo nihil officia quas asperiores ut doloribus nostrum, in at exercitationem incidunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis odio aliquam recusandae eum tenetur quisquam voluptas, voluptatum nesciunt eaque unde nemo repellendus sequi? Ab eum quaerat facilis fugiat obcaecati totam?</p>
+                </section>
+            </main>
+        </div> <!--CIERRE DIV ROW BOOTSTRAP-->
+    </div><!--CIERRE DIV CONTAINER BOOTSTRAP-->
 
-                <!--pequeño intro de la noticia-->
-                <p class="detP">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem debitis recusandae suscipit inventore enim consequuntur deleniti dolorem praesentium aut ratione perspiciatis cum, soluta ipsum asperiores doloremque, minus incidunt distinctio.
-                </p>
-                <!--ACA PODRÍA IR LA IMAGEN DE LA NOTICIA Y UNA GALERIA O CARRUSEL DE IMAGENES-->
-                <img class="detImg" src="assets/imgNoticias/profesor.jpg" alt="Titulo Noticia">
-                <p class="detP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium aspernatur nostrum eaque numquam illo voluptas! Quasi doloribus, unde, esse consequuntur rem distinctio blanditiis quod ullam veniam totam nihil consectetur!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut natus, sequi nostrum labore excepturi reprehenderit ab nam in ex quia reiciendis, itaque illum? Repudiandae ducimus corporis cupiditate facere cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium molestias reiciendis vitae itaque possimus. Quod quos voluptate reiciendis dignissimos cumque voluptatibus quis veritatis obcaecati nulla. In expedita dolore harum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas exercitationem natus accusamus ducimus at laudantium mollitia placeat rem repellat quae, magni minima labore architecto aliquid consequatur nesciunt cumque dolores ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum? Quae, magnam. Maxime ex fugiat quibusdam sed esse illo nihil officia quas asperiores ut doloribus nostrum, in at exercitationem incidunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis odio aliquam recusandae eum tenetur quisquam voluptas, voluptatum nesciunt eaque unde nemo repellendus sequi? Ab eum quaerat facilis fugiat obcaecati totam?</p>
-        </section>
-    </main>|1
     <!--PODRIA IR UN ASIDE, EL MISMO QUE EL DEL INDEX-->
     <!--
     <aside>
         <a href="colaboradores.html"><img src="assets/imgNoticias/imagen4.JPG" alt="Título Noticia" height="80px"></a> 
         <a href="colaboradores.html"><img src="assets/imgNoticias/imagen4.JPG" alt="Título Noticia" height="80px"></a> 
     </aside>-->
-    <footer class="pie">
-        <img class="pie__img" id="imgFoot" src="assets/logoAzul.png" alt="" width="100px">
-        <div class="redesPie"> 
-        <h3 class="pie__h3">Seguinos en</h3>
-        <ul class="pie__ul">
-            <li class="pie__ul_li"><a class="pie__a" href="https://www.facebook.com/escba.leones" target="_blank">Facebook</a></li>
-            <li class="pie__ul_li"><a class="pie__a" href="https://www.instagram.com/escbaleones/?hl=es" target="_blank">instagram</a></li>
-        </ul>
-    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+            </div>
+        </section>
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- REDES SOCIALES -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Seguinos en:
+                    </h6>
+                    <p>
+                    <a href="https://www.facebook.com/escba.leones" class="text-reset">Facebook</a>
+                    </p>
+                    <p>
+                    <a href="https://www.instagram.com/escbaleones/?hl=es" class="text-reset">Instagram</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Mapa del Sitio
+                    </h6>
+                    <p>
+                    <a href="index.html" class="text-reset">Inicio</a>
+                    </p>
+                    <p>
+                    <a href="noticias.html" class="text-reset">Noticias</a>
+                    </p>
+                    <p>
+                    <a href="institucion.html" class="text-reset">Institución</a>
+                    </p>
+                    <p>
+                    <a href="colaboradores.html" class="text-reset">Colaboradores</a>
+                    </p>
+                    <p>
+                        <a href="contacto.html" class="text-reset">Contacto</a>
+                    </p>
+                </div>       
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Contacto
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> Alte. Brown 551</p>
+                    <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    escba.escbaleones@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> 03472 483562</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Links  -->
     
-    <div class="menuPie">
-        <ul class="listaMenu">
-            <li class="pie__lista__menu"> <a  class="pie__a__menu" href="index.html">Inicio</a> </li>
-            <li class="pie__lista__menu"> <a class="pie__a__menu"  href="noticias.html">Últimas Noticias</a> </li>
-            <li class="pie__lista__menu"><a class="pie__a__menu"  href="institucion.html">Nuestra Institución</a></li>
-            <li class="pie__lista__menu"><a class="pie__a__menu"  href="colaboradores.html">Colaboradores</a></li>
-            <li class="pie__lista__menu"><a class="pie__a__menu"  href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-        <p class="pie__copy">&copy; Copyrigth 2022</p> <br>
-</footer>
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+        </div>
+    </footer>      
+<script src="libs/bootstrap/js/bootstrap.min.js"></script><!--BOOTSTRAP-->    
 </body>
 </html>

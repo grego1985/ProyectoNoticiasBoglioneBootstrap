@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+     <!--BOOTSTRAP-->
+     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <!--Hojas de estilos-->
     <link rel="stylesheet" href="css/estilos.css">
  
@@ -27,7 +29,7 @@
     <header class="encabezado">
         <a href="index.html"><img src="assets/logoBlanco.png" alt="LOGO" class="logo"></a>
         
-        <nav class="navegacion">
+        <nav class="navegacion container-fluid">
                 <!--MENU DE NAVEGACION-->
             <ul class="navegacion__ul">
                 <li class="navegacion__ul__li"> <a class="navegacion__a" href="index.html">Inicio</a> </li>
@@ -51,46 +53,93 @@
             </div>
         </nav>
 </header>
-    <main class="intMenu">
-        <div class="intContenedor">
-            <section class="intSeccionPri">
-                <h1 class="intH1">Quienes Somos</h1>
-                <img class="intImg" src="assets/imgNoticias/profesor.jpg" alt="Quienes Somos">
-            </section>
-        </div>
+    <div class="container-fluid"><!--CONTEINER BOOTSTRAP-->
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--DIV ROS BOOTSTRAP-->
+            <main class="intMenu">
+                <div class="intContenedor">
+                    <section class="intSeccionPri">
+                        <h1 class="display-3">Quienes Somos</h1>
+                        <img class="intImg" src="assets/imgNoticias/profesor.jpg" alt="Quienes Somos">
+                    </section>
+                </div>
 
-        <section class="intInfo">
-            <p class="intP">A fines del año 1956, por iniciativa de un grupo de vecinos, se crea una entidad a la cual se denominó “Asociación Cooperadora y Protectora del Instituto secundario”, quien arbitraría los medios necesarios para la creación de una Escuela de enseñanza Media que se llamaría en ese entonces  “General José María Paz”. El 17 de marzo de 1958, dieron comienzo las clases del ciclo básico, por expediente N° 11.896/55. Luego se continuó con los cursos de “Magisterio” y “Bachillerato Superior”. En 1962 egresaron los primeros Bachilleres de este establecimiento. Teniendo en cuenta el impulso progresista que existía en Leones por esos años, y respondiendo a una necesidad de la población, comenzó a funcionar, ese mismo año, el “Instituto Secundario Comercial General Manuel Belgrano”, cuyos alumnos egresarían tras cinco años de estudio con el título de “Perito Mercantil”. Para que los mencionados Institutos fueran reconocidos oficialmente por el Ministerio de Educación y Justicia de la Nación, el gobierno resuelve que, a partir del 1 de marzo de 1973, mediante Decreto 8.970/72 ambos Institutos fusionen, así surge la “Escuela Nacional de Comercio y Bachillerato Anexo”. A partir de entonces esta Escuela fue reconocida como la ENCBA de Leones, hasta 1986 en que se modifica por ENSCBA (Escuela Nacional Superior de Comercio y Bachillerato Anexo), ya que comienza allí una carrera de nivel terciario: «Técnico Superior en Cooperativismo y Mutualismo».  Luego se incorporaría el «Profesorado en Contabilidad, Computación y Cooperativismo», que sufre la reconversión a «Profesorado para el tercer ciclo de la EGB y Polimodal en Economía».</p>
-            <h1 class="intH1">A las primeras ofertas académicas de Nivel Superior, se suman a través de los años</h1>
-            <ul class="intUl">
-                <li>Año 2003: Tecnicatura Superior en Gestión de las Organizaciones</li>
-                <li>Año 2005: Profesorado en Educación  Especial con Orientación en Alteraciones en el Desarrollo Cognitivo» (que al cambiar de plan, pasa a ser «Profesorado de Educación Especial con Orientación en Discapacidad Intelectual</li>
-                <li>Año 2010: Profesorado de Inglés</li>
-                <li>Año 2012: Profesorado de Educación Secundaria en Lengua y Literatura</li>
-                <li>Año 2015: Profesorado de Educación Secundaria en Biología</li>
-            </ul>
+                <section class="intInfo">
+                    <p class="intP">A fines del año 1956, por iniciativa de un grupo de vecinos, se crea una entidad a la cual se denominó “Asociación Cooperadora y Protectora del Instituto secundario”, quien arbitraría los medios necesarios para la creación de una Escuela de enseñanza Media que se llamaría en ese entonces  “General José María Paz”. El 17 de marzo de 1958, dieron comienzo las clases del ciclo básico, por expediente N° 11.896/55. Luego se continuó con los cursos de “Magisterio” y “Bachillerato Superior”. En 1962 egresaron los primeros Bachilleres de este establecimiento. Teniendo en cuenta el impulso progresista que existía en Leones por esos años, y respondiendo a una necesidad de la población, comenzó a funcionar, ese mismo año, el “Instituto Secundario Comercial General Manuel Belgrano”, cuyos alumnos egresarían tras cinco años de estudio con el título de “Perito Mercantil”. Para que los mencionados Institutos fueran reconocidos oficialmente por el Ministerio de Educación y Justicia de la Nación, el gobierno resuelve que, a partir del 1 de marzo de 1973, mediante Decreto 8.970/72 ambos Institutos fusionen, así surge la “Escuela Nacional de Comercio y Bachillerato Anexo”. A partir de entonces esta Escuela fue reconocida como la ENCBA de Leones, hasta 1986 en que se modifica por ENSCBA (Escuela Nacional Superior de Comercio y Bachillerato Anexo), ya que comienza allí una carrera de nivel terciario: «Técnico Superior en Cooperativismo y Mutualismo».  Luego se incorporaría el «Profesorado en Contabilidad, Computación y Cooperativismo», que sufre la reconversión a «Profesorado para el tercer ciclo de la EGB y Polimodal en Economía».</p>
+                    <h1 class="intH1">A las primeras ofertas académicas de Nivel Superior, se suman a través de los años</h1>
+                    <ul class="intUl">
+                        <li>Año 2003: Tecnicatura Superior en Gestión de las Organizaciones</li>
+                        <li>Año 2005: Profesorado en Educación  Especial con Orientación en Alteraciones en el Desarrollo Cognitivo» (que al cambiar de plan, pasa a ser «Profesorado de Educación Especial con Orientación en Discapacidad Intelectual</li>
+                        <li>Año 2010: Profesorado de Inglés</li>
+                        <li>Año 2012: Profesorado de Educación Secundaria en Lengua y Literatura</li>
+                        <li>Año 2015: Profesorado de Educación Secundaria en Biología</li>
+                    </ul>
+                </section>
+            </main>
+        </div> <!--CIERRE DIV ROW BOOTSTRAP-->
+    </div><!--CIERRE DIV CONTAINER BOOTSTRAP-->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+            </div>
         </section>
-    </main>
-    <footer class="pie">
-        <img class="pie__img" id="imgFoot" src="assets/logoAzul.png" alt="" width="100px">
-        <div class="redesPie"> 
-        <h3 class="pie__h3">Seguinos en</h3>
-        <ul class="pie__ul">
-            <li class="pie__ul_li"><a class="pie__a" href="https://www.facebook.com/escba.leones" target="_blank">Facebook</a></li>
-            <li class="pie__ul_li"><a class="pie__a" href="https://www.instagram.com/escbaleones/?hl=es" target="_blank">instagram</a></li>
-        </ul>
-    </div>
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- REDES SOCIALES -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Seguinos en:
+                    </h6>
+                    <p>
+                    <a href="https://www.facebook.com/escba.leones" class="text-reset">Facebook</a>
+                    </p>
+                    <p>
+                    <a href="https://www.instagram.com/escbaleones/?hl=es" class="text-reset">Instagram</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Mapa del Sitio
+                    </h6>
+                    <p>
+                    <a href="index.html" class="text-reset">Inicio</a>
+                    </p>
+                    <p>
+                    <a href="noticias.html" class="text-reset">Noticias</a>
+                    </p>
+                    <p>
+                    <a href="institucion.html" class="text-reset">Institución</a>
+                    </p>
+                    <p>
+                    <a href="colaboradores.html" class="text-reset">Colaboradores</a>
+                    </p>
+                    <p>
+                        <a href="contacto.html" class="text-reset">Contacto</a>
+                    </p>
+                </div>       
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Contacto
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> Alte. Brown 551</p>
+                    <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    escba.escbaleones@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> 03472 483562</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Links  -->
     
-    <div class="menuPie">
-        <ul class="listaMenu">
-            <li class="pie__lista__menu"> <a  class="pie__a__menu" href="index.html">Inicio</a> </li>
-            <li class="pie__lista__menu"> <a class="pie__a__menu"  href="noticias.html">Últimas Noticias</a> </li>
-            <li class="pie__lista__menu"><a class="pie__a__menu"  href="institucion.html">Nuestra Institución</a></li>
-            <li class="pie__lista__menu"><a class="pie__a__menu"  href="colaboradores.html">Colaboradores</a></li>
-            <li class="pie__lista__menu"><a class="pie__a__menu"  href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-        <p class="pie__copy">&copy; Copyrigth 2022</p> <br>
-</footer>
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+        </div>
+    </footer>      
+<script src="libs/bootstrap/js/bootstrap.min.js"></script><!--BOOTSTRAP-->    
 </body>
 </html>
