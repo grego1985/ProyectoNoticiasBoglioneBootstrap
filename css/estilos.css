@@ -923,16 +923,14 @@ body{
         display: none;
     }
 
-
     .main__aside{
         display: none;
     }
 
-
-    
     .noticiasSec{
         display: none;
     }
+
 
     .notGenResponsive{
         display: grid;
@@ -949,8 +947,7 @@ body{
     .divResponsive{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
+        grid-template-rows: auto;
     }
 }/*Cierre MEDIA QUERIES 601 A 900 PX*/
 /* FIN MEDIAQUERIES INDEX*/
