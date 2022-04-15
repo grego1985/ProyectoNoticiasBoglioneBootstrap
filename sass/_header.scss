@@ -1,0 +1,14 @@
+header{
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    background-image: linear-gradient(to right, $colorFondo, white);
+
+    .logo{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        width: 180px;
+        animation-name: bounceIn;
+        animation-duration: 4s;    
+    }
+} //fin Header
