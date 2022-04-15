@@ -16,6 +16,10 @@ body{
     overflow-x: hidden;
 }
 
+.carrusel{
+    width: 60%;
+    margin-right: 40%;
+}
 
 /* INICIO ESTILOS ENCABEZADO Y NAVEGACION*/
 .encabezado{
@@ -1802,8 +1806,8 @@ body{
 
 /*INICIO MEDIAQUERIES NOTICIADETALLE*/
 @media (min-width:1px) and (max-width:400px){
-    .detImg{
-       display: none;
+    .carrusel{
+        display: none;
     }
 }
 @media screen and (max-width: 600px) {
